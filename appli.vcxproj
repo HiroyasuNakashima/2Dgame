@@ -43,7 +43,7 @@
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v142</PlatformToolset>
-    <CharacterSet>Unicode</CharacterSet>
+    <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
@@ -146,13 +146,51 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ANIMATION.cpp" />
+    <ClCompile Include="CAMERA.cpp" />
+    <ClCompile Include="CHARACTER.cpp" />
+    <ClCompile Include="CONTAINER.cpp" />
+    <ClCompile Include="DATA.cpp" />
+    <ClCompile Include="FILE_BUFFER.cpp" />
+    <ClCompile Include="GAME.cpp" />
     <ClCompile Include="gmain.cpp" />
+    <ClCompile Include="MAP.cpp" />
+    <ClCompile Include="MAP1.cpp" />
+    <ClCompile Include="MAPIMG.cpp" />
+    <ClCompile Include="NAME.cpp" />
+    <ClCompile Include="OBJECT.cpp" />
+    <ClCompile Include="PLAYER.cpp" />
+    <ClCompile Include="PLAYER_BULLET.cpp" />
+    <ClCompile Include="WINDOW.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="resource.rc" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="cpp.hint" />
+    <ClInclude Include="ANIMATION.h" />
+    <ClInclude Include="CAMERA.h" />
+    <ClInclude Include="CHARACTER.h" />
+    <ClInclude Include="CONTAINER.h" />
+    <ClInclude Include="DATA.h" />
+    <ClInclude Include="FILE_BUFFER.h" />
+    <ClInclude Include="GAME.h" />
+    <ClInclude Include="MAP.h" />
+    <ClInclude Include="MAP1.h" />
+    <ClInclude Include="MAPIMG.h" />
+    <ClInclude Include="NAME.h" />
+    <ClInclude Include="OBJECT.h" />
+    <ClInclude Include="PLAYER.h" />
+    <ClInclude Include="PLAYER_BULLET.h" />
+    <ClInclude Include="WINDOW.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="assets\data\data.txt" />
+    <Text Include="assets\map\map1.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\source\repos\libOne\libOne.vcxproj">
+      <Project>{94bf0c4f-ab80-4dd3-8195-d212bc414797}</Project>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

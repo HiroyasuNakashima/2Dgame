@@ -1,23 +1,77 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="ソース ファイル">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;c++;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
-    <Filter Include="ヘッダー ファイル">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
-    </Filter>
     <Filter Include="リソース ファイル">
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="MAP">
+      <UniqueIdentifier>{f7fc5e8f-6baa-498c-97e8-1ececc3d39e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MAP\基底">
+      <UniqueIdentifier>{b5397a23-c476-4270-b0b3-c91680814bf1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CONTAINER">
+      <UniqueIdentifier>{9f2d1929-ec09-4f2d-a04e-14651d9ab18f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CHARACTER">
+      <UniqueIdentifier>{c225f5af-063a-4573-b99b-9073420345c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CHARACTER\基底">
+      <UniqueIdentifier>{616a3b20-7228-4cab-9938-1cd004b94a03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OBJECT">
+      <UniqueIdentifier>{72f9919d-cd42-4a06-9435-4381898e8f2c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OBJECT\基底">
+      <UniqueIdentifier>{e1f61fd8-d034-41f0-9d32-2ccaf80a948b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="gmain.cpp">
-      <Filter>ソース ファイル</Filter>
+    <ClCompile Include="GAME.cpp" />
+    <ClCompile Include="CONTAINER.cpp">
+      <Filter>CONTAINER</Filter>
     </ClCompile>
+    <ClCompile Include="DATA.cpp">
+      <Filter>CONTAINER</Filter>
+    </ClCompile>
+    <ClCompile Include="MAP.cpp">
+      <Filter>MAP\基底</Filter>
+    </ClCompile>
+    <ClCompile Include="MAP1.cpp">
+      <Filter>MAP</Filter>
+    </ClCompile>
+    <ClCompile Include="FILE_BUFFER.cpp">
+      <Filter>CONTAINER</Filter>
+    </ClCompile>
+    <ClCompile Include="NAME.cpp">
+      <Filter>CONTAINER</Filter>
+    </ClCompile>
+    <ClCompile Include="ANIMATION.cpp">
+      <Filter>CONTAINER</Filter>
+    </ClCompile>
+    <ClCompile Include="CHARACTER.cpp">
+      <Filter>CHARACTER\基底</Filter>
+    </ClCompile>
+    <ClCompile Include="PLAYER.cpp">
+      <Filter>CHARACTER</Filter>
+    </ClCompile>
+    <ClCompile Include="CAMERA.cpp">
+      <Filter>OBJECT</Filter>
+    </ClCompile>
+    <ClCompile Include="WINDOW.cpp">
+      <Filter>OBJECT</Filter>
+    </ClCompile>
+    <ClCompile Include="PLAYER_BULLET.cpp">
+      <Filter>CHARACTER</Filter>
+    </ClCompile>
+    <ClCompile Include="MAPIMG.cpp">
+      <Filter>MAP</Filter>
+    </ClCompile>
+    <ClCompile Include="OBJECT.cpp">
+      <Filter>OBJECT\基底</Filter>
+    </ClCompile>
+    <ClCompile Include="gmain.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="resource.rc">
@@ -25,6 +79,52 @@
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="cpp.hint" />
+    <ClInclude Include="GAME.h" />
+    <ClInclude Include="CONTAINER.h">
+      <Filter>CONTAINER</Filter>
+    </ClInclude>
+    <ClInclude Include="DATA.h">
+      <Filter>CONTAINER</Filter>
+    </ClInclude>
+    <ClInclude Include="MAP.h">
+      <Filter>MAP\基底</Filter>
+    </ClInclude>
+    <ClInclude Include="MAP1.h">
+      <Filter>MAP</Filter>
+    </ClInclude>
+    <ClInclude Include="FILE_BUFFER.h">
+      <Filter>CONTAINER</Filter>
+    </ClInclude>
+    <ClInclude Include="NAME.h">
+      <Filter>CONTAINER</Filter>
+    </ClInclude>
+    <ClInclude Include="ANIMATION.h">
+      <Filter>CONTAINER</Filter>
+    </ClInclude>
+    <ClInclude Include="CHARACTER.h">
+      <Filter>CHARACTER\基底</Filter>
+    </ClInclude>
+    <ClInclude Include="PLAYER.h">
+      <Filter>CHARACTER</Filter>
+    </ClInclude>
+    <ClInclude Include="CAMERA.h">
+      <Filter>OBJECT</Filter>
+    </ClInclude>
+    <ClInclude Include="WINDOW.h">
+      <Filter>OBJECT</Filter>
+    </ClInclude>
+    <ClInclude Include="PLAYER_BULLET.h">
+      <Filter>CHARACTER</Filter>
+    </ClInclude>
+    <ClInclude Include="MAPIMG.h">
+      <Filter>MAP</Filter>
+    </ClInclude>
+    <ClInclude Include="OBJECT.h">
+      <Filter>OBJECT\基底</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="assets\map\map1.txt" />
+    <Text Include="assets\data\data.txt" />
   </ItemGroup>
 </Project>

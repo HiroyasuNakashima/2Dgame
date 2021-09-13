@@ -1,7 +1,9 @@
 #include"libOne.h"
+#include"GAME.h"
 void gmain() {
-    window(1600, 900);
-    while (notQuit) {
-        clear(220, 220, 220);
+	GAME* game = new GAME;
+	while (notQuit) {
+		game->proc();
     }
+	delete game;
 }

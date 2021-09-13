@@ -1,0 +1,42 @@
+//システム
+//ウィンドウ
+d WindowWidth 800
+d WindowHeight 600
+d ScreenSize 0	// 0:指定サイズ、1:フルスクリーン
+
+//マップ
+d MapChipSize 50
+d MapColorR 255
+d MapColorG 255
+d MapColorB 255
+d MapColorA 255
+
+//アニメーション
+d AnimDirection 4
+d AnimDirImages 3
+
+//キャラクター
+d CharasTotal 1//マップに表示するキャラ総数
+d CharaNumImages 12
+d CharaChipSize 50
+d CharaAnimInterval 8
+d CharaColorR 255
+d CharaColorG 255
+d CharaColorB 255
+d CharaColorA 255
+//PLAYER
+d PlayerPx 400
+d PlayerPy 300
+d PlayerSpeed 5
+d PlayerOffsetTop 4
+d PlayerOffsetBottom 46
+d PlayerOffsetLeft 8
+d PlayerOffsetRight 42
+d PlayerNumBullet 3
+
+//弾
+d BulletSpeed 10
+d BulletOffsetTop 20
+d BulletOffsetBottom 30
+d BulletOffsetLeft 20
+d BulletOffsetRight 30
